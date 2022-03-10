@@ -1,0 +1,10 @@
+// Body / General dark color schemes
+// Any element styles within the 'body.dark-mode' nest will be active once dark mode is true
+body.dark-mode {
+    color: white;
+    background-color: black;
+    & .theme-toggle {
+        color: white;
+        background-color: grey;
+    }
+}

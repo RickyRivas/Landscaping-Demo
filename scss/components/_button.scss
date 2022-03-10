@@ -1,0 +1,50 @@
+// Regular Button
+.btn {
+    cursor: pointer;
+    padding: 15px 30px;
+    background-color: $primary;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    margin: $margin-sm;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    &:hover{
+        opacity: .8;
+    }
+    &:active{}
+}
+// Button Link 
+.btn-primary {
+    background-color: $primary;
+}
+.btn-success {
+    background-color: $success;
+}
+.btn-danger {
+    background-color: $danger;
+}
+.btn-info {
+    background-color: $info;
+}
+.btn-warning {
+    background-color: $warning;
+    color: black;
+}
+.btn-secondary {
+    background-color: $secondary;
+}
+.btn-dark {
+    background-color: $dark;
+}
+.btn-light {
+    background-color: $light;
+    color: black;
+}
+
+// Standard Icons
+.standard-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
