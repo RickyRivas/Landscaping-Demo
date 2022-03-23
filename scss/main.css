@@ -718,6 +718,7 @@ body {
     padding: 0 1em;
     z-index: 2;
     margin-top: -5em;
+    padding-bottom: 4em;
   }
   .landing-overlap .card {
     display: -webkit-box;
@@ -799,6 +800,136 @@ body {
   .landing-overlap .card .body a img {
     margin-left: var(--margin-sm);
   }
+  #intro {
+    width: 100%;
+  }
+  #intro .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: var(--padding-xl) var(--padding-md);
+  }
+  #intro .container .graphics {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 3em;
+  }
+  #intro .container .graphics picture {
+    width: 90%;
+    max-width: 360px;
+    height: 450px;
+    position: relative;
+  }
+  #intro .container .graphics picture img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+  }
+  #intro .container .graphics picture.abs {
+    width: 90%;
+    max-width: 360px;
+    position: absolute;
+    left: 0;
+    top: -2em;
+  }
+  #intro .container .graphics picture.abs img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+  }
+  #intro .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #intro .container .content span {
+    color: var(--main-primary-color);
+    margin-bottom: .2em;
+  }
+  #intro .container .content h2 {
+    margin-bottom: var(--margin-sm);
+    font-size: 2em;
+  }
+  #intro .container .content p {
+    line-height: 1.5;
+    margin-bottom: var(--margin-md);
+  }
+  #intro .container .content .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #intro .container .content .btns a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0;
+  }
+  #intro .container .content .btns a:nth-child(2) {
+    border: 2px solid var(--main-primary-color);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1em;
+    background-color: transparent;
+    color: var(--main-primary-color);
+    margin-left: .5em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -811,6 +942,30 @@ body {
   }
   .landing-overlap .card {
     max-width: unset;
+  }
+  #intro {
+    width: 100%;
+  }
+  #intro .container {
+    width: 100%;
+    max-width: 1200px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding-top: 5em;
+  }
+  #intro .container .graphics {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #intro .container .graphics picture {
+    top: 2em;
+  }
+  #intro .container .graphics picture.abs {
+    top: 1em;
   }
 }
 
