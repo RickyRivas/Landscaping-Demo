@@ -90,7 +90,6 @@
     left: 0;
     -o-object-fit: cover;
        object-fit: cover;
-    z-index: -11;
   }
   #landing picture img {
     position: absolute;

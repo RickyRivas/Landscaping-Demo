@@ -702,4 +702,121 @@ body {
 .btn-primary {
   background-color: var(--main-primary-color);
 }
+
+@media (min-width: 0em) {
+  .landing-overlap {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+    place-items: center;
+    background-color: white;
+    padding: 0 1em;
+    z-index: 2;
+    margin-top: -5em;
+  }
+  .landing-overlap .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+  }
+  .landing-overlap .card .head {
+    position: relative;
+    width: 100%;
+    height: 10em;
+  }
+  .landing-overlap .card .head picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .landing-overlap .card .head picture img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .landing-overlap .card .body {
+    padding: 1em;
+  }
+  .landing-overlap .card .body h3 {
+    margin-bottom: var(--margin-md);
+  }
+  .landing-overlap .card .body p {
+    line-height: 1.5;
+    margin-bottom: var(--margin-md);
+    font-size: var(--font-sz-sm);
+  }
+  .landing-overlap .card .body a {
+    color: var(--main-primary-color);
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .landing-overlap .card .body a p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0;
+  }
+  .landing-overlap .card .body a img {
+    margin-left: var(--margin-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-overlap {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    place-items: center;
+    background-color: white;
+    padding: 0 1em;
+    z-index: 2;
+    margin-top: -5em;
+  }
+  .landing-overlap .card {
+    max-width: unset;
+  }
+}
 /*# sourceMappingURL=main.css.map */
