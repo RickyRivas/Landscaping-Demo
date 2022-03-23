@@ -1,8 +1,8 @@
 :root {
   /* Colors */
   --swiper-navigation-size: 44px;
-  --swiper-theme-color: --main-primary-color;
-  --main-primary-color: #0f65ff;
+  --swiper-theme-color: var(--main-primary-color);
+  --main-primary-color: #2A7D2E;
   --secondary-clr: #d92322;
   --gold: #bc9366;
   --green: #5aa26e;

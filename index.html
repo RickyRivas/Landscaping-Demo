@@ -32,9 +32,9 @@
     <link rel="stylesheet" href="/scss/critical.css">
     <link rel="stylesheet" href="/scss/main.css" media="all" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/scss/swiper/swiper-bundle.min.css">
-    
+
     <!-- Preload -->
-    <link rel="preload" as="image" href="/assets/RivasWebDesignsWhite.svg">
+    <link rel="preload" as="image" href="/assets/lawnLogo.png">
     <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Light.woff2" crossorigin="">
     <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Regular.woff2" crossorigin="">
 
@@ -46,30 +46,20 @@
     <header>
         <nav>
             <div class="logo-wrapper">
-                <img src="assets/RivasWebDesigns.svg" class="" alt="Rivas Web Designs Logo" width='200' height='72' />
+                <img src="assets/lawnLogo.png" class="" alt="logo" width="275" height="199" />
             </div>
             <div class="navlinks-overlay"></div>
-            <div class="desktop-flex">
-                <ul class="nav-links">
-                    <li class="nav-link"><a href='index.html'>Home</a></li>
-                    <li class="nav-link"><a href="services.html">Services</a></li>
-                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-link"><a href="#about">About</a></li>
-                    <li class="nav-link"><a href="contact.html">Contact</a></li>
-                    <li class="social-media">
-                        <a href="mailto:rivaswebdesigns@gmail.com"><img
-                                src="https://d33wubrfki0l68.cloudfront.net/05e54babfd7539afe96921c2ee7e9f679371316b/bf936/assets/paper-plane.svg"
-                                alt="email" class="" /></a>
-                    </li>
-                </ul>
-                <!-- </div> -->
-                <div class="mobile-flex">
-                    <a href="contact.html" id="nav-cta" class="">Request Quote</a>
-                    <button class="hamburger" aria-label="Toggle">
-                        <span class="hamburger-inner"> </span>
-                    </button>
-                </div>
-            </div>
+            <ul class="nav-links">
+                <li class="nav-link active"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="menu.html">Services</a></li>
+                <li class="nav-link"><a href="gallery.html">Portfolio</a></li>
+                <li class="nav-link"><a href="about.html">About Us</a></li>
+                <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Navigation Toggle">
+                <span class="hamburger-inner"> </span>
+            </button>
+            <button class="btn btn-primary nav-btn order-trigger">Request An Estimate</button>
         </nav>
     </header>
     <!-- Navigation End -->
@@ -77,6 +67,27 @@
     <main>
         <!-- Landing Section Start -->
         <section id='landing'>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/img02m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/img02.webp">
+                <img aria-hidden='true' decoding="async" src="/assets/img02.jpeg" alt="" width="276" height="132">
+            </picture>
+            <div class="overlay"></div>
+            <!-- Content-->
+            <div class="content">
+                <h1>
+                    Landscaping in Tulsa, Oklahoma
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis facilisi consequat sit dolor.
+                    Scelerisque feugiat fringilla nisi adipiscing ut neque, tristique.
+                </p>
+                <div class="btns">
+                    <a href="#" class="btn">About Us</a>
+                    <a href="#" class="btn">Contact us</a>
+                </div>
+            </div>
+            <!-- Content-->
         </section>
         <!-- Landing Section End -->
     </main>
@@ -85,7 +96,7 @@
     <footer>
         <div class="container">
             <div class="logo-contain col">
-                <img src="/assets/RivasWebDesignsWhite.svg" alt="Rivas Web Designs Logo" width="300" height="109">
+                <img src="/assets/lawnLogo.png" alt="Rivas Web Designs Logo" width="300" height="109">
             </div>
             <div class="col">
                 <h3>Site Navigation</h3>
