@@ -18,13 +18,14 @@
             align-items: flex-start;
             flex-direction: column;
             width: 100%;
-            max-width: 300px;
+            max-width: 350px;
             box-shadow: var(--box-shadow);
+            border-radius: 1em;
 
             .head {
                 position: relative;
                 width: 100%;
-                height: 10em;
+                height: 9em;
 
                 picture {
                     position: absolute;
@@ -41,6 +42,7 @@
                         left: 0;
                         top: 0;
                         object-fit: cover;
+                        border-radius: 1em 1em 0 0;
                     }
                 }
             }
@@ -55,7 +57,7 @@
                 p {
                     line-height: 1.5;
                     margin-bottom: var(--margin-md);
-                    font-size: var(--font-sz-sm);
+                    font-size: .9em;
                 }
 
                 a {
@@ -79,16 +81,10 @@
         }
     }
 }
+
 @media (min-width: 768px) {
     .landing-overlap {
-        width: 100%;
-        max-width: 1000px;
-        margin: auto;
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-        place-items: center;
-        background-color: white;
         padding: 0 1em;
         z-index: 2;
         margin-top: -5em;
@@ -101,34 +97,59 @@
                 picture {
 
 
-                    img {
-
-                    }
+                    img {}
                 }
             }
 
             .body {
 
 
-                h3 {
+                h3 {}
 
-                }
-
-                p {
-
-                    
-                }
+                p {}
 
                 a {
 
 
-                    p {
+                    p {}
 
-                    }
+                    img {}
+                }
+            }
+        }
+    }
+}
 
-                    img {
+@media (min-width: 1024px) {
+    .landing-overlap {
 
-                    }
+        margin-top: -6em;
+
+        .card {
+            max-width: unset;
+
+            .head {
+
+                picture {
+
+
+                    img {}
+                }
+            }
+
+            .body {
+
+
+                h3 {}
+
+                p {}
+
+                a {
+
+
+                    p {}
+
+                    img {}
                 }
             }
         }

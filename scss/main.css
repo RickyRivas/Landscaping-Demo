@@ -734,14 +734,15 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     -webkit-box-shadow: var(--box-shadow);
             box-shadow: var(--box-shadow);
+    border-radius: 1em;
   }
   .landing-overlap .card .head {
     position: relative;
     width: 100%;
-    height: 10em;
+    height: 9em;
   }
   .landing-overlap .card .head picture {
     position: absolute;
@@ -760,6 +761,7 @@ body {
     top: 0;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 1em 1em 0 0;
   }
   .landing-overlap .card .body {
     padding: 1em;
@@ -770,7 +772,7 @@ body {
   .landing-overlap .card .body p {
     line-height: 1.5;
     margin-bottom: var(--margin-md);
-    font-size: var(--font-sz-sm);
+    font-size: .9em;
   }
   .landing-overlap .card .body a {
     color: var(--main-primary-color);
@@ -801,19 +803,20 @@ body {
 
 @media (min-width: 768px) {
   .landing-overlap {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-    place-items: center;
-    background-color: white;
     padding: 0 1em;
     z-index: 2;
     margin-top: -5em;
+  }
+  .landing-overlap .card {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-overlap {
+    margin-top: -6em;
   }
   .landing-overlap .card {
     max-width: unset;
