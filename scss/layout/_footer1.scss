@@ -1,7 +1,7 @@
 @media (min-width: 0em) {
   footer {
     width: 100%;
-    padding: $padding-xl $padding-md;
+    padding: var(--padding-xl) var(--padding-md);
     background-color: #222;
     z-index: 20;
     position: relative;
@@ -67,7 +67,7 @@
       }
       .contact {
         grid-area: contact;
-        background-color: $primary;
+        background-color: var(--main-primary-color);
         border-radius: 1rem;
         padding: 1rem;
         h4 {
@@ -113,7 +113,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    background-color: $primary;
+    background-color: var(--main-primary-color);
     color: white;
     z-index: 20;
     position: relative;

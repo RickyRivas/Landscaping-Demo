@@ -74,7 +74,7 @@
         align-items: flex-end;
         transform: translateX(100%);
         transition: all 0.3s ease-in-out;
-        background-color: $light-black;
+        background-color: var(--light-blk);
         list-style: none;
         padding: 2em;
         & li {
@@ -175,7 +175,7 @@
     // fixed state
     &.scroll-fixed {
       transition: all 1s;
-      background-color: $light-black;
+      background-color: var(--light-blk);
       position: fixed;
       animation: fadeInDown .5s forwards ease-in;
 
@@ -246,7 +246,7 @@
     }
     &.scroll-fixed {
       transition: background-color 1s;
-      background-color: $light-black;
+      background-color: var(--light-blk);
       position: fixed;
 
       nav {
@@ -328,7 +328,7 @@
           opacity: 1;
           padding: 0em;
           width: max-content;
-          font-size: $font-size-sm;
+          font-size: var(--font-sz-sm);
 
           a {
             padding: 0.5em;
@@ -359,7 +359,7 @@
         &:hover,
         &:active {
           transform: translateY(-5px);
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
           transition: all 0.5s;
         }
       }

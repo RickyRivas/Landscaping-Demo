@@ -17,9 +17,6 @@
   font-style: normal
 }
 
-:root {
-  --swiper-theme-color: $primary;
-}
 
 .swiper {
   margin-left: auto;
@@ -200,9 +197,6 @@
   height: var(--swiper-virtual-size)
 }
 
-:root {
-  --swiper-navigation-size: 44px
-}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -346,7 +340,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: $primary;
+  background:  var(--main-primary-color);
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,

@@ -2,14 +2,14 @@
 
 // 1. Configuration and helpers
 @import
-  'abstracts/variables',
+  // 'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins';
 
 // 3. Base stuff                  
 @import
-  'base/base',
-  'base/fonts';
+  'base/base';
+  // 'base/fonts';
 
 // 4. Layout-related sections
 @import
@@ -19,10 +19,9 @@
 // 5. Components
 @import
   'components/button';
-  @import 'abstracts/dark-mode';
 
 // 6. Page-specific styles
 @import
   'pages/home';
 
-      
+// var(--border-radius)

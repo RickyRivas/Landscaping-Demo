@@ -1,0 +1,10 @@
+@media (min-width: 0em){
+    // All sections will have an id
+    #landing {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--light-gray);
+    } 
+}

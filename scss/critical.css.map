@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,GAAG;EAElB,AAAA,QAAQ,CAAC;IACL,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM;IACnB,gBAAgB,EAAE,iBAAiB;GACtC",
+    "sources": [
+        "critical.scss"
+    ],
+    "names": [],
+    "file": "critical.css"
+}

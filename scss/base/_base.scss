@@ -1,8 +1,40 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''), url('/fonts/GeneralSans-Light.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/fonts/GeneralSans-Light.woff') format('woff');
+
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('/fonts/GeneralSans-Regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/fonts/GeneralSans-Regular.woff2') format('woff');
+}
+
+html {
+  font-size: 16px;
+  font-family: 'General Sans', sans-serif;
+}
+
+body {
+  word-wrap: break-word;
 }
 
 // Scale font-szie from a min of 16px (at 320px viewpoort) to a maximum of 22px (at a 1000px viewport)
@@ -11,8 +43,9 @@
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
 }
+
 @media screen and (min-width: 1000px) {
   html {
     font-size: 20px;
   }
-} 
+}

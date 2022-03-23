@@ -5,6 +5,34 @@
   padding: 0;
 }
 
+/* lato-regular - latin */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(""), url("/fonts/GeneralSans-Light.woff2") format("woff2"), url("/fonts/GeneralSans-Light.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("/fonts/GeneralSans-Regular.woff2") format("woff2"), url("/fonts/GeneralSans-Regular.woff2") format("woff");
+}
+
+html {
+  font-size: 16px;
+  font-family: 'General Sans', sans-serif;
+}
+
+body {
+  word-wrap: break-word;
+}
+
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -108,7 +136,7 @@
             transform: translateX(100%);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #222;
+    background-color: var(--light-blk);
     list-style: none;
     padding: 2em;
   }
@@ -225,7 +253,7 @@
   header.scroll-fixed {
     -webkit-transition: all 1s;
     transition: all 1s;
-    background-color: #222;
+    background-color: var(--light-blk);
     position: fixed;
     -webkit-animation: fadeInDown .5s forwards ease-in;
             animation: fadeInDown .5s forwards ease-in;
@@ -281,7 +309,7 @@
   header.scroll-fixed {
     -webkit-transition: background-color 1s;
     transition: background-color 1s;
-    background-color: #222;
+    background-color: var(--light-blk);
     position: fixed;
   }
   header.scroll-fixed nav {
@@ -388,7 +416,7 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-size: 0.875rem;
+    font-size: var(--font-sz-sm);
   }
   header nav .nav-links li a {
     padding: 0.5em;
@@ -421,8 +449,8 @@
   header nav #nav-cta:hover, header nav #nav-cta:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -569,7 +597,7 @@
 @media (min-width: 0em) {
   footer {
     width: 100%;
-    padding: 4rem 1rem;
+    padding: var(--padding-xl) var(--padding-md);
     background-color: #222;
     z-index: 20;
     position: relative;
@@ -661,7 +689,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: contact;
-    background-color: #2d2d2d;
+    background-color: var(--main-primary-color);
     border-radius: 1rem;
     padding: 1rem;
   }
@@ -721,7 +749,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 0;
-    background-color: #2d2d2d;
+    background-color: var(--main-primary-color);
     color: white;
     z-index: 20;
     position: relative;
@@ -767,14 +795,14 @@
 .btn {
   cursor: pointer;
   padding: 15px 30px;
-  background-color: #2d2d2d;
+  background-color: var(--main-primary-color);
   border: 0;
   color: white;
   text-decoration: none;
-  margin: 0.5rem;
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin: var(--margin-sm);
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .btn:hover {
@@ -782,68 +810,6 @@
 }
 
 .btn-primary {
-  background-color: #2d2d2d;
-}
-
-.btn-success {
-  background-color: #5aa26e;
-}
-
-.btn-danger {
-  background-color: #ef2e2d;
-}
-
-.btn-info {
-  background-color: #0dcaf0;
-}
-
-.btn-warning {
-  background-color: #ffc107;
-  color: black;
-}
-
-.btn-secondary {
-  background-color: #ef2e2d;
-}
-
-.btn-dark {
-  background-color: #212529;
-}
-
-.btn-light {
-  background-color: #f8f9fa;
-  color: black;
-}
-
-.standard-icon {
-  width: 2em;
-  height: 2em;
-  margin-right: 1em;
-}
-
-body.dark-mode {
-  color: white;
-  background-color: black;
-}
-
-body.dark-mode .theme-toggle {
-  color: white;
-  background-color: grey;
-}
-
-@media (min-width: 0em) {
-  #landing {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #ced4da;
-  }
+  background-color: var(--main-primary-color);
 }
 /*# sourceMappingURL=main.css.map */
