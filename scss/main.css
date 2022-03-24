@@ -673,6 +673,13 @@ body {
 }
 
 @media (min-width: 1200px) {
+  #small-contact.last-misc {
+    margin-bottom: -4em;
+    z-index: 100;
+  }
+  footer {
+    padding-top: 8em;
+  }
   footer .container .logo-contain img {
     width: 250px;
     height: unset;
@@ -701,6 +708,89 @@ body {
 
 .btn-primary {
   background-color: var(--main-primary-color);
+}
+
+.fixed {
+  position: fixed;
+  bottom: 1em;
+  right: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 19;
+}
+
+.top-link {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  padding: 1px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--main-primary-color);
+  border: 0;
+  position: relative;
+}
+
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.screen-reader-text {
+  position: absolute;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.screen-reader-text:focus {
+  display: block;
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  -webkit-clip-path: none;
+          clip-path: none;
+  background-color: #eee;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  font-size: 1em;
+  clip: auto !important;
 }
 
 @media (min-width: 0em) {
@@ -1308,6 +1398,7 @@ body {
             box-shadow: var(--box-shadow);
     max-width: 700px;
     overflow: hidden;
+    margin-bottom: 5em;
   }
   #why-over .text {
     display: -webkit-box;
