@@ -1203,6 +1203,65 @@ body {
     display: none;
     visibility: hidden;
   }
+  #home-gallery {
+    width: 100%;
+    padding: var(--padding-xl) var(--padding-md);
+    background-color: #F6FAF7;
+  }
+  #home-gallery .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  #home-gallery .heading h2 {
+    font-size: 2em;
+  }
+  #home-gallery .heading span {
+    color: var(--main-primary-color);
+  }
+  #home-gallery .grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  #home-gallery .grid .item {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+  #home-gallery .grid .item picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  #home-gallery .grid .item picture img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1244,6 +1303,10 @@ body {
     grid-gap: 1em;
   }
   #why .container .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #home-gallery .grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -1352,6 +1415,10 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #home-gallery .grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1381,6 +1448,7 @@ body {
   #small-contact {
     margin-top: -5em;
     border-radius: 1em;
+    background-attachment: fixed;
   }
   #small-contact .overlay {
     border-radius: 1em;
@@ -1395,6 +1463,12 @@ body {
   }
   #why .container .cards .card {
     max-width: 400px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  #why .container .cards .card:hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   #why .container .graphic {
     display: block;
