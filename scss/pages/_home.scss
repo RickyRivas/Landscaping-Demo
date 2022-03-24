@@ -335,6 +335,7 @@
                 background-color: white;
                 color: black;
                 width: max-content;
+                margin: 0;
             }
         }
 
@@ -346,6 +347,85 @@
             left: 0;
             position: absolute;
             opacity: 90%;
+        }
+    }
+
+    #why {
+        padding: var(--padding-xl) var(--padding-md);
+        width: 100%;
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 2em;
+
+                span {
+                    color: var(--main-primary-color);
+                }
+
+                h2 {
+                    font-size: 2em;
+                    margin-bottom: .4em;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+
+            .cards {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1em;
+
+                .card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    box-shadow: var(--box-shadow);
+                    padding: 1em;
+                    max-width: 450px;
+                    background-color: white;
+                    text-align: center;
+
+                    .circle {
+                        background-color: var(--main-primary-color);
+                        padding: 1em;
+                        margin-bottom: .5em;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+
+                        img {
+                            width: 3em;
+                            height: 3em;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.5em;
+                        margin-bottom: .3em;
+                    }
+
+                    p {
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .graphic {
+                display: none;
+                visibility: hidden;
+            }
         }
     }
 }
@@ -445,6 +525,47 @@
                         img {}
                     }
                 }
+            }
+        }
+    }
+
+    #why {
+        // position: relative;
+
+        .container {
+
+
+            .heading {
+
+
+                span {}
+
+                h2 {}
+
+                p {}
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+
+                .card {
+
+
+                    .circle {
+
+
+                        img {}
+                    }
+
+                    h3 {}
+
+                    p {}
+                }
+            }
+
+            .graphic {
+
+                img {}
             }
         }
     }
@@ -562,6 +683,70 @@
         }
 
     }
+
+    #why {
+        // position: relative;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5em;
+            position: relative;
+
+            .heading {
+                justify-content: flex-start;
+
+                span {}
+
+                h2 {}
+
+                p {}
+            }
+
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+                position: absolute;
+                bottom: 1em;
+                z-index: 2;
+                max-width: 850px;
+
+                .card {
+                    max-width: 400px;
+
+                    .circle {
+
+
+                        img {}
+                    }
+
+                    h3 {}
+
+                    p {}
+                }
+            }
+
+            .graphic {
+                display: block;
+                visibility: visible;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 450px;
+                height: 650px;
+                z-index: 1;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -646,6 +831,68 @@
 
         .overlay {
             border-radius: 1em;
+        }
+    }
+
+    #why {
+        // position: relative;
+
+        .container {
+
+
+            .heading {
+
+
+                span {}
+
+                h2 {}
+
+                p {}
+            }
+
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+                position: absolute;
+                bottom: 1em;
+                z-index: 2;
+                max-width: 900px;
+
+                .card {
+                    max-width: 400px;
+
+                    .circle {
+
+
+                        img {}
+                    }
+
+                    h3 {}
+
+                    p {}
+                }
+            }
+
+            .graphic {
+                display: block;
+                visibility: visible;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 450px;
+                height: 650px;
+                z-index: 1;
+                justify-self: flex-end;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }
