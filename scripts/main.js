@@ -1,18 +1,27 @@
-// Navigation 1
 const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
 
-function toggleNav() {
-    nav.classList.toggle('is-active');
-    burger.classList.toggle('is-active');
-    body.classList.toggle('body-fixed');
-    navOverlay.classList.toggle('is-active');
-}
-burger.addEventListener('click', toggleNav)
-navOverlay.addEventListener('click', toggleNav)
+nav.addEventListener('click', e => {
+  if (e.target instanceof HTMLAnchorElement) {
+    if (screen.width >= 1024) {
+      return
+    } else {
+      toggleEverything()
+    }
+  }
+})
 
+
+const toggleEverything = () => {
+  nav.classList.toggle('is-active');
+  burger.classList.toggle('is-active');
+  body.classList.toggle('body-fixed')
+  navOverlay.classList.toggle('is-active');
+}
+burger.addEventListener('click', toggleEverything)
+navOverlay.addEventListener('click', toggleEverything)
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
     speed: 1000,
