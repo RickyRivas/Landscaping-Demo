@@ -36,6 +36,7 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Light.woff2" crossorigin="">
     <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Regular.woff2" crossorigin="">
 
+
     <title>Landscaping Demo by RR</title>
 </head>
 
@@ -66,7 +67,7 @@
         <!-- Page Heading -->
         <section id="standard-heading">
             <img aria-hidden='true' src="/assets/twig.png" alt="twig" class='abs-head' width="100" height="139">
-            <h1>Contact Us</h1>
+            <h1>Our Portfolio</h1>
             <picture>
                 <source media="(max-width: 600px)" srcset="/assets/img08m.webp">
                 <source media="(min-width: 601px)" srcset="/assets/img08l.webp">
@@ -75,82 +76,116 @@
             <div class="overlay"></div>
         </section>
         <!-- close -->
-        <section id="contact">
-            <div class="container">
-                <div class="form-container">
-                    <form name="Contact Form" id='contact-form' method="POST" data-netlify="true">
-                        <h2>Get In Touch</h2>
-                        <div class="flex">
-                            <div class="form-control dropdown">
-                                <p>How did you hear about us?</p>
-                                <select name="contact-reason" form="contact-form" aria-label="contact reason" required>
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="option">Option 1</option>
-                                    <option value="optiontwo">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </select>
-                            </div>
-                            <div class="form-control">
-                                <p>Your Name:</p>
-                                <input type="text" name="name" aria-label="Your name" required />
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="form-control">
-                                <p>Your Email:</p>
-                                <input type="email" name="email" aria-label="Your email" placeholder="" required />
-                            </div>
-                            <div class="form-control">
-                                <p>Your Phone:</p>
-                                <input type="number" name="number" aria-label="Your phone number" required />
-                            </div>
-                        </div>
-                        <div class="form-control">
-                            <p>How can we help?</p>
-                            <textarea aria-label="message" placeholder="" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="info-container">
-                    <h3>Construction Name</h3>
-                    <div class="para">
-                        <p>Feel free to contact us for any construction services. Give us a call for immediate help.</p>
+        <!-- Gallery Section Start -->
+        <section id="masonry-gallery">
+            <!-- Gallery Start -->
+            <div class="masonry">
+                <div class="col">
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img02m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img02.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img02.jpeg" alt=""
+                                width="276" height="132">
+                        </picture>
                     </div>
-                    <ul>
-                        <h3>Contact Info</h3>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/phone-call-f.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Call Us</p>
-                                <a href="#" class='phone'>(918) 123 - 4567</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/placemarker.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Our Location</p>
-                                <a href="#" class='phone'>1234 E Street, Tulsa, Oklahoma, 12345</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/email.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Business Email</p>
-                                <a href="#" class='phone'>construction@gmail.com</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img05m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img05m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img05m.png" alt="house"
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img02m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img02.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img02.jpeg" alt=""
+                                width="276" height="132">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img04m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img04m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img04m.webp" alt=""
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img05m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img05m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img05m.png" alt="house"
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img06.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img06.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img06.webp" alt="house"
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img02m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img02m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img02m.webp"
+                                alt="house" width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img05m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img05m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img05m.png" alt="house"
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img04m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img04m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img04m.webp" alt=""
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img02m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img02m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img02m.webp"
+                                alt="house" width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img06.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img06.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img06.webp" alt="house"
+                                width="300" height="166">
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="/assets/img04m.webp">
+                            <source media="(min-width: 601px)" srcset="/assets/img04m.webp">
+                            <img aria-hidden='true' loading='lazy' decoding="async" src="/assets/img04m.webp" alt=""
+                                width="300" height="166">
+                        </picture>
+                    </div>
                 </div>
             </div>
+
         </section>
-        <!-- Page Heading -->
+        <!-- Gallery Section End -->
         <!-- Mini Contact Start -->
         <section id="small-contact" class='last-misc' style="margin-top: unset;">
             <div class="heading">
@@ -229,6 +264,7 @@
     <!-- Scripts -->
     <script src="/scripts/swiper-bundle.min.js"></script>
     <script src='scripts/main.js'></script>
+    <script src='scripts/gallery.js'></script>
 </body>
 
 </html>
