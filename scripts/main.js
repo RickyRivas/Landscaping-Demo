@@ -14,13 +14,13 @@ burger.addEventListener('click', toggleNav)
 navOverlay.addEventListener('click', toggleNav)
 
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 0,
     speed: 1000,
     loop: true,
     autoplay: false,
     slidesPerView: 1,
-    disableOnInteraction: true,
-    centeredSlides: true,
+    // disableOnInteraction: true,
+    // centeredSlides: true,
     pagination: false,
     pagination: {
         el: ".swiper-pagination",
