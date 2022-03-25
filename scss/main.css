@@ -2551,4 +2551,215 @@ input[type=number] {
     display: flex;
   }
 }
+
+@media (min-width: 0em) {
+  #about {
+    padding: 4em 1em;
+    width: 100vw;
+  }
+  #about .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .container .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+    max-width: 360px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  #about .container .item .img-box {
+    height: 400px;
+    width: 100%;
+    position: relative;
+  }
+  #about .container .item .img-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #about .container .item .img-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    background-color: var(--main-primary-color);
+  }
+  #about .container .item .qual {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    background-color: var(--main-primary-color);
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  #about .container .item .qual span {
+    font-size: 3em;
+    line-height: 1;
+    padding-right: .2em;
+  }
+  #about .container .context .header {
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .container .context .header span {
+    color: var(--main-primary-color);
+    text-transform: uppercase;
+  }
+  #about .container .context .header h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+  }
+  #about .container .context .header .decor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  #about .container .context .header .decor img {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+  }
+  #about .container .context .header .decor .line {
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-primary-color);
+  }
+  #about .container .context .header p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  #about .container {
+    grid-gap: 1em;
+  }
+  #about .container .item {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    width: 100%;
+    margin-left: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+    grid-gap: 1em;
+    place-items: center;
+  }
+  #about .container .item {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin: 0;
+    width: 90%;
+  }
+  #about .container .item .img-box {
+    height: 450px;
+  }
+  #about .container .context .header {
+    margin-top: 0;
+    padding-right: 1em;
+  }
+  #about .container .context .header .decor {
+    margin-bottom: 2.5em;
+  }
+  #about .container .context .header p {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+    grid-gap: 2em;
+    place-items: center;
+  }
+  #about .container .item {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin: 0;
+    width: 100%;
+  }
+  #about .container .item .img-box {
+    height: 450px;
+  }
+  #about .container .context .header {
+    margin-top: 0;
+    padding-right: 0;
+  }
+  #about .container .context .header .decor {
+    margin-bottom: 2.5em;
+  }
+  #about .container .context .header p {
+    max-width: unset;
+  }
+}
 /*# sourceMappingURL=main.css.map */
