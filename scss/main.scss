@@ -14,7 +14,8 @@
 // 4. Layout-related sections
 @import
   'layout/header1',
-  'layout/footer1';
+  'layout/footer1',
+  'layout/pageHeading';
 
 // 5. Components
 @import
@@ -22,6 +23,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/contact';
 
 // var(--border-radius)

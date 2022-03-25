@@ -1,0 +1,436 @@
+@media (min-width: 0em) {
+    #contact {
+        width: 100vw;
+        position: relative;
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 4em 1em;
+
+            .form-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                // change for larger screens
+                margin-bottom: 4em;
+
+
+                form {
+                    width: 100%;
+                    // box-shadow: var(--box-shadow);
+                    padding: 0em;
+                    background-color: white;
+
+                    h2 {
+                        font-size: 2em;
+                        margin-bottom: .5em;
+                    }
+
+                    .form-control {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1em;
+
+                        p {
+                            margin-bottom: .5em;
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: .5em;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                            border: 1px solid #a4a4a4;
+                        }
+
+                        input[type="number"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: .5em;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                        }
+
+                        input[type="email"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: .5em;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                        }
+
+                        textarea {
+                            max-width: 100%;
+                            min-width: 100%;
+                            border-radius: unset;
+                            padding: 1em;
+                            border: 1px solid #a4a4a4;
+                            resize: none;
+                            margin-bottom: 1em;
+                            font-family: inherit;
+                            background: #f8f9fc;
+                            font-size: 16px;
+                        }
+
+                        select {
+                            width: 100%;
+                            padding: .5em;
+                            border: 1px solid #a4a4a4;
+                            // A reset of styles, including removing the default dropdown arrow
+                            appearance: none;
+                            color: #222;
+                            // Additional resets for further consistency
+                            margin: 0;
+                            width: 100%;
+                            font-family: inherit;
+                            cursor: inherit;
+                            font-size: inherit;
+                            line-height: inherit;
+                            // color: #a4a4a4;
+                            background-color: white;
+                            position: relative;
+                            background: #f8f9fc;
+                            -webkit-appearance: none;
+                            background-image: url(/assets/down-chevron.svg);
+                            background-position: right 0.75em center;
+                            background-repeat: no-repeat;
+                            background-size: 15px;
+                        }
+
+                        button {
+                            margin: 0;
+                        }
+                    }
+
+                    // dropdown
+                    .dropdown {
+                        position: relative;
+
+                        img {
+                            top: 2.3rem;
+                            width: 1.5rem;
+                            position: absolute;
+                            right: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .info-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 2em;
+                box-shadow: var(--box-shadow);
+                background-color: var(--main-primary-color);
+
+                div.para {
+                    width: 100%;
+                    border-bottom: 1px solid white;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                    color: white;
+
+                    p {
+                        line-height: 1.5;
+                    }
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 1em;
+                    color: white;
+                }
+
+                ul {
+                    list-style: none;
+                    width: 100%;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin-bottom: 1em;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: bold;
+
+                            img {
+                                width: 2.5em;
+                                height: 2.5em;
+                                margin-right: 1em;
+                            }
+                        }
+
+                        &>div {
+                            display: flex;
+                            flex-direction: column;
+
+                            p {
+                                color: white;
+                                margin-bottom: 0.1em;
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    body.dark-mode #contact {
+        .container {
+            .form-container {
+                h3 {
+                    color: white;
+                }
+
+                form {
+                    label {
+                        p {
+                            color: #222;
+                        }
+
+                        input[type="text"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        input[type="email"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        input[type="number"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        textarea {
+                            border: none;
+                            background-color: #222222;
+                            color: white;
+                        }
+
+                        select {
+                            border: none;
+                            color: white;
+                            background-color: #222222;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+
+            .info-container {
+                #map {}
+
+                .items {
+                    background-color: #222;
+                }
+
+                .item {
+                    border-bottom: 1px solid var(--dark-gray);
+
+                    p {
+                        margin-bottom: 1em;
+                    }
+
+                    a {
+                        color: white;
+                    }
+
+                    p:nth-of-type(2) {
+                        // text-align: right;
+                        color: #a4a4a4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #contact {
+        .container {
+            width: 100%;
+            max-width: 650px;
+            margin: auto;
+            padding: 4em 1em;
+
+            .form-container {
+                margin-bottom: 2em;
+
+                h3 {}
+
+                form {
+                    width: 100%;
+
+                    .flex {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+                    }
+
+                    .form-control {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1em;
+
+                        p {
+                            margin-bottom: .5em;
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            border-radius: unset;
+
+                            height: 46px;
+                        }
+
+                        input[type="email"] {
+                            width: 100%;
+                            border-radius: unset;
+                            height: 46px;
+
+                        }
+
+                        input[type="number"] {
+                            width: 100%;
+                            border-radius: unset;
+                            height: 46px;
+
+                        }
+
+                        textarea {
+                            height: 201px;
+                            border-radius: unset;
+
+                            margin-bottom: 1em;
+                            font-family: inherit;
+                            font-size: 16px;
+                        }
+
+                        select {
+                            width: 100%;
+                            // A reset of styles, including removing the default dropdown arrow
+                            appearance: none;
+                            // Additional resets for further consistency
+                            margin: 0;
+                            width: 100%;
+                            font-family: inherit;
+                            font-size: inherit;
+                            // cursor: inherit;
+                            line-height: inherit;
+                            position: relative;
+                        }
+
+                        button {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #contact {
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+
+            .form-container {
+                margin-bottom: unset;
+
+                h3 {}
+            }
+
+            .info-container {
+                h3 {}
+
+                ul {
+
+                    li {
+
+
+                        a {
+
+
+                            img {}
+                        }
+
+                        &>div {
+
+
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #contact {
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 3rem;
+
+            .form-container {
+                margin-bottom: unset;
+
+                h3 {}
+            }
+
+            .info-container {
+                h3 {}
+
+                ul {
+
+                    li {
+
+
+                        a {
+
+
+                            img {}
+                        }
+
+                        &>div {
+
+
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

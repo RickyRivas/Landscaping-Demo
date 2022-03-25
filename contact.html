@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="" />
+
+    <!--Favicons-->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/scss/variables.css">
+    <link rel="stylesheet" href="/scss/critical.css">
+    <link rel="stylesheet" href="/scss/main.css" media="all" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="/scss/swiper/swiper-bundle.min.css">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/assets/lawnLogo.png">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Light.woff2" crossorigin="">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/GeneralSans-Regular.woff2" crossorigin="">
+
+    <title>Landscaping Demo by RR</title>
+</head>
+
+<body>
+    <!-- Navigation Start -->
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <img src="assets/lawnLogo.png" class="" alt="logo" width="275" height="199" />
+            </div>
+            <div class="navlinks-overlay"></div>
+            <ul class="nav-links">
+                <li class="nav-link active"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="menu.html">Services</a></li>
+                <li class="nav-link"><a href="gallery.html">Portfolio</a></li>
+                <li class="nav-link"><a href="about.html">About Us</a></li>
+                <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Navigation Toggle">
+                <span class="hamburger-inner"> </span>
+            </button>
+            <button class="btn btn-primary nav-btn order-trigger">Request An Estimate</button>
+        </nav>
+    </header>
+    <!-- Navigation End -->
+    <!-- Main Start -->
+    <main>
+        <!-- Page Heading -->
+        <section id="standard-heading">
+            <img aria-hidden='true' src="/assets/twig.png" alt="twig" class='abs-head' width="100" height="139">
+            <h1>Contact Us</h1>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/img08m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/img08l.webp">
+                <img aria-hidden='true' decoding="async" src="/assets/img08.png" alt="" width="276" height="132">
+            </picture>
+            <div class="overlay"></div>
+        </section>
+        <!-- close -->
+        <section id="contact">
+            <div class="container">
+                <div class="form-container">
+                    <form name="Contact Form" id='contact-form' method="POST" data-netlify="true">
+                        <h2>Get In Touch</h2>
+                        <div class="flex">
+                            <div class="form-control dropdown">
+                                <p>Subject</p>
+                                <select name="contact-reason" form="contact-form" aria-label="contact reason" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="option">Option 1</option>
+                                    <option value="optiontwo">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <p>Your Name:</p>
+                                <input type="text" name="name" aria-label="Your name" required />
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="form-control">
+                                <p>Your Email:</p>
+                                <input type="email" name="email" aria-label="Your email" placeholder="" required />
+                            </div>
+                            <div class="form-control">
+                                <p>Your Phone:</p>
+                                <input type="number" name="number" aria-label="Your phone number" required />
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <p>How can we help?</p>
+                            <textarea aria-label="message" placeholder="" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="info-container">
+                    <h3>Construction Name</h3>
+                    <div class="para">
+                        <p>Feel free to contact us for any construction services. Give us a call for immediate help.</p>
+                    </div>
+                    <ul>
+                        <h3>Contact Info</h3>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/phone-call-f.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Call Us</p>
+                                <a href="#" class='phone'>(918) 123 - 4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/placemarker.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Our Location</p>
+                                <a href="#" class='phone'>1234 E Street, Tulsa, Oklahoma, 12345</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/email.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Business Email</p>
+                                <a href="#" class='phone'>construction@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Page Heading -->
+        <!-- Mini Contact Start -->
+        <section id="small-contact" class='last-misc' style="margin-top: unset;">
+            <div class="heading">
+                <div>
+                    <h2>Thank for visiting our landscaping demo!</h2>
+                    <!-- <p>Serving the best quality work for Tulsa, Oklahoma and surrounding areas</p> -->
+                </div>
+                <a href="index.html" class="btn">Go back home</a>
+            </div>
+            <div class="overlay"></div>
+        </section>
+        <!-- Mini Contact End -->
+        <div class="fixed">
+            <button class="top-link hide" id="js-top">
+                <img src="assets/up-arrow.svg" alt="up arrow" class="" width='22' height='22' />
+                <span class="screen-reader-text">Contact</span>
+            </button>
+        </div>
+    </main>
+    <!-- Main End -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo-contain col">
+                <img src="/assets/lawnLogo.png" alt="Rivas Web Designs Logo" width="300" height="109">
+            </div>
+            <div class="col">
+                <h3>Site Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Dev</li>
+                    <li>Logo Design</li>
+                    <li>Website SEO</li>
+                    <li>E-Commerce</li>
+                </ul>
+            </div>
+            <div class="contact col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="/assets/phone-call-f.svg" alt="phone icon" />
+                        </div>
+                        <a href="#">(918) 123 - 4567</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/assets/email.svg" alt="mail icon" />
+                        </div>
+                        <a href="#">landscape@gmail.com</a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/assets/placeholder.svg" alt="clock icon" />
+                        </div>
+                        <p>Mon - Fri | 9am - 5pm CST</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="credit">
+        <p>&copy RR | All Rights Reserved.</p>
+    </div>
+    <!-- Footer -->
+    <!-- Scripts -->
+    <script src="/scripts/swiper-bundle.min.js"></script>
+    <script src='scripts/main.js'></script>
+</body>
+
+</html>
