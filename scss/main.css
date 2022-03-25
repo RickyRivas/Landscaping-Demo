@@ -2585,8 +2585,9 @@ input[type=number] {
             flex-direction: column;
     width: 95%;
     max-width: 360px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 1em;
   }
   #about .container .item .img-box {
     height: 400px;
