@@ -76,9 +76,44 @@
         <!-- close -->
         <section id="contact">
             <div class="container">
+                <div class="info-container">
+                    <!-- <span>Contact Us</span> -->
+                    <h2>Contact us for your landscaping needs.</h2>
+                    <div class="para">
+                        <p>Feel free to contact us for any construction services. Give us a call for immediate help.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/phone-callg.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Give Us a Call</p>
+                                <a href="#" class='phone'>(918) 123 - 4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/locationg.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Our Location</p>
+                                <a href="#" class='location'>1234 E Street, Tulsa, Oklahoma</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/emailg.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Business Email</p>
+                                <a href="#" class='phone'>landscaping@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="form-container">
                     <form name="Contact Form" id='contact-form' method="POST" data-netlify="true">
-                        <h2>Get In Touch</h2>
                         <div class="flex">
                             <div class="form-control dropdown">
                                 <p>How did you hear about us?</p>
@@ -91,61 +126,25 @@
                             </div>
                             <div class="form-control">
                                 <p>Your Name:</p>
-                                <input type="text" name="name" aria-label="Your name" required />
+                                <input type="text" name="name" aria-label="Your name" placeholder="Name" required />
                             </div>
                         </div>
                         <div class="flex">
                             <div class="form-control">
                                 <p>Your Email:</p>
-                                <input type="email" name="email" aria-label="Your email" placeholder="" required />
+                                <input type="email" name="email" aria-label="Your email" placeholder="Email" required />
                             </div>
                             <div class="form-control">
                                 <p>Your Phone:</p>
-                                <input type="number" name="number" aria-label="Your phone number" required />
+                                <input type="number" name="number" aria-label="Your phone number" placeholder="Phone"required />
                             </div>
                         </div>
                         <div class="form-control">
                             <p>How can we help?</p>
-                            <textarea aria-label="message" placeholder="" name="message" required></textarea>
+                            <textarea aria-label="message" placeholder="Your Message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
-                </div>
-                <div class="info-container">
-                    <h3>Company Name</h3>
-                    <div class="para">
-                        <p>Feel free to contact us for any construction services. Give us a call for immediate help.</p>
-                    </div>
-                    <ul>
-                        <h3>Contact Info</h3>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/phone-call-f.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Call Us</p>
-                                <a href="#" class='phone'>(918) 123 - 4567</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/placemarker.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Our Location</p>
-                                <a href="#" class='phone'>1234 E Street, Tulsa, Oklahoma, 12345</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="/assets/email.svg" alt="Phone Icon" height="50" width="50">
-                            </a>
-                            <div>
-                                <p>Business Email</p>
-                                <a href="#" class='phone'>landscaping@gmail.com</a>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

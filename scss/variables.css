@@ -27,7 +27,8 @@
   --font-sz-lg: var(--font-sz-base) * 1.25;
 
   /* Box shadows */
-  --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  --box-shadow: #bfbaba40 0px 7px 29px 0px;
 
   /* Text */
   --para-clr: #adb5bd;
