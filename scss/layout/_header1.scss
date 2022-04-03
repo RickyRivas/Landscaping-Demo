@@ -95,6 +95,7 @@
             bottom: 0;
             position: absolute;
             transform: translateX(-101%);
+            transition: all .8s;
           }
 
           &:hover {

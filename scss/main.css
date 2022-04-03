@@ -167,6 +167,8 @@ body {
     position: absolute;
     -webkit-transform: translateX(-101%);
             transform: translateX(-101%);
+    -webkit-transition: all .8s;
+    transition: all .8s;
   }
   header nav .nav-links li:hover::after {
     -webkit-transition: -webkit-transform 0.5s;
@@ -989,6 +991,10 @@ body {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .8s;
+    transition: all .8s;
   }
   .landing-overlap .card .body a p {
     width: -webkit-max-content;
@@ -998,6 +1004,26 @@ body {
   }
   .landing-overlap .card .body a img {
     margin-left: var(--margin-sm);
+  }
+  .landing-overlap .card .body a::after {
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-primary-color);
+    bottom: 0;
+    position: absolute;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  .landing-overlap .card .body a:hover::after {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   #intro {
     width: 100%;
@@ -1057,6 +1083,8 @@ body {
     top: 0;
     left: 0;
     position: absolute;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
   }
   #intro .container .graphics .pos img.abs {
     width: 100%;
@@ -1379,6 +1407,9 @@ body {
     width: max-content;
     margin: 0;
   }
+  #small-contact .heading a:hover {
+    opacity: .8;
+  }
   #small-contact .overlay {
     width: 100%;
     height: 100%;
@@ -1444,13 +1475,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-shadow: var(--box-shadow);
-            box-shadow: var(--box-shadow);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 1em;
     max-width: 450px;
     background-color: white;
     text-align: center;
     position: relative;
+    border-radius: 1em;
+    -webkit-transition: all .8s;
+    transition: all .8s;
   }
   #why .container .cards .card .circle {
     background-color: var(--main-primary-color);
@@ -1477,9 +1511,15 @@ body {
   #why .container .cards .card p {
     line-height: 1.5;
   }
+  #why .container .cards .card:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
   #why .container .graphic {
     display: none;
     visibility: hidden;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
   }
   #home-gallery {
     width: 100%;
@@ -2726,6 +2766,8 @@ input[type=number] {
     left: 0;
     -o-object-fit: cover;
        object-fit: cover;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
   }
   #about .container .item .img-box::before {
     content: '';
