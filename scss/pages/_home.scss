@@ -170,15 +170,86 @@
                         justify-content: center;
                         align-items: center;
                         font-size: 1em;
-                        background-color: transparent;
-                        color: var(--main-primary-color);
                         margin-left: 0.5em;
+                        background-color: transparent;
+                        color: black;
+                        overflow: hidden;
+                        transition: all .5s;
+
+                        &::before {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            background-color: var(--main-primary-color);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transition: all .8s;
+                            transform: translateX(-100%);
+                            z-index: -1;
+                        }
+
+                        &:hover {
+                            transition: all .8s;
+                            border: 2px solid var(--main-primary-color);
+                            color: white;
+
+                            &::before {
+                                transform: translateX(0%);
+                            }
+                        }
                     }
 
-                    // a:nth-child(2) {
-                    //     background-color: white;
-                    //     color: var(--main-primary-color);
-                    // }
+                    a:nth-child(1) {
+
+                        color: var(--main-primary-color);
+                        position: relative;
+                        overflow: hidden;
+                        color: white;
+                        background-color: transparent;
+                        transition: all .8s;
+                        border: 2px solid var(--main-primary-color);
+
+                        &::before {
+                            content: '';
+                            background-color: var(--main-primary-color);
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                            // display: none;
+                        }
+
+                        &::after {
+                            transition: all .8s;
+                            content: '';
+                            background-color: white;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0%;
+                            transform: translateX(-100%);
+                            z-index: -1;
+                        }
+
+                        &:hover {
+                            transition: color .8s .1s ease-in-out;
+                            color: black;
+
+                            &::before {
+                                transition: all .8s;
+                                transform: translateX(100%);
+                            }
+
+                            &::after {
+                                transition: all .8s;
+                                transform: translateX(0%)
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1087,6 +1158,7 @@
 
         .text {
             padding: 1em;
+
             span {}
 
             h2 {}
@@ -1101,6 +1173,7 @@
             position: relative;
             height: 100%;
             width: 100%;
+
             img {}
 
         }
@@ -1187,9 +1260,11 @@
             border-radius: 1em;
         }
     }
+
     #test {
         background-attachment: fixed;
     }
+
     #why {
         // position: relative;
 

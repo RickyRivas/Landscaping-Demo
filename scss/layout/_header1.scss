@@ -140,6 +140,50 @@
       .nav-btn {
         display: none;
         box-shadow: none;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        transition: all .8s;
+
+        &::before {
+          content: '';
+          background-color: var(--main-primary-color);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          // display: none;
+        }
+
+        &::after {
+          transition: all .8s;
+          content: '';
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0%;
+          transform: translateX(-100%);
+          z-index: -1;
+        }
+
+        &:hover {
+          transition: color .8s .2s ease-in-out;
+          color: black;
+
+          &::before {
+            transition: all .8s;
+            transform: translateX(100%);
+          }
+
+          &::after {
+            transition: all .8s;
+            transform: translateX(0%)
+          }
+        }
       }
     }
 
