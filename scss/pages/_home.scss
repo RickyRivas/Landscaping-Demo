@@ -193,32 +193,17 @@
                         align-items: center;
                         font-size: 1em;
                         margin-left: 0.5em;
-                        background-color: transparent;
+                        background-color: white;
                         color: black;
                         overflow: hidden;
                         transition: all .5s;
 
-                        &::before {
-                            content: '';
-                            width: 100%;
-                            height: 100%;
-                            background-color: var(--main-primary-color);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            transition: all .8s;
-                            transform: translateX(-100%);
-                            z-index: -1;
-                        }
 
                         &:hover {
                             transition: all .8s;
                             border: 2px solid var(--main-primary-color);
                             color: white;
-
-                            &::before {
-                                transform: translateX(0%);
-                            }
+                            background-color: var(--main-primary-color);
                         }
                     }
 
@@ -228,48 +213,15 @@
                         position: relative;
                         overflow: hidden;
                         color: white;
-                        background-color: transparent;
+                        background-color: var(--main-primary-color);
                         transition: all .8s;
                         border: 2px solid var(--main-primary-color);
 
-                        &::before {
-                            content: '';
-                            background-color: var(--main-primary-color);
-                            width: 100%;
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            z-index: -1;
-                            // display: none;
-                        }
-
-                        &::after {
-                            transition: all .8s;
-                            content: '';
-                            background-color: white;
-                            width: 100%;
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0%;
-                            transform: translateX(-100%);
-                            z-index: -1;
-                        }
 
                         &:hover {
-                            transition: color .8s .1s ease-in-out;
+                            transition: all .8s;
                             color: black;
-
-                            &::before {
-                                transition: all .8s;
-                                transform: translateX(100%);
-                            }
-
-                            &::after {
-                                transition: all .8s;
-                                transform: translateX(0%)
-                            }
+                            background-color: white;
                         }
                     }
                 }
