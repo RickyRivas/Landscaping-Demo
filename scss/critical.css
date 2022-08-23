@@ -1,34 +1,19 @@
 @media (min-width: 0em) {
   #landing {
     height: 730px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-gray);
     position: relative;
   }
   #landing .content {
     color: white;
     z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     width: 100%;
     max-width: 650px;
@@ -46,44 +31,28 @@
     line-height: 1.5;
   }
   #landing .content .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   #landing .content .btns a {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   #landing .content .btns a:nth-child(1) {
     border: 2px solid white;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
     background-color: transparent;
     color: white;
     overflow: hidden;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   #landing .content .btns a:nth-child(1):hover {
-    -webkit-transition: all .8s;
-    transition: all .8s;
+    transition: all 0.8s;
     border: 2px solid var(--main-primary-color);
     border-radius: 2em !important;
     background-color: var(--main-primary-color);
@@ -93,12 +62,10 @@
     position: relative;
     overflow: hidden;
     color: white;
-    -webkit-transition: all .8s;
-    transition: all .8s;
+    transition: all 0.8s;
   }
   #landing .content .btns a:nth-child(2):hover {
-    -webkit-transition: all .8s;
-    transition: all .8s;
+    transition: all 0.8s;
     color: black;
     background-color: white;
   }
@@ -132,16 +99,13 @@
     opacity: 60%;
   }
 }
-
 @media (min-width: 768px) {
   #landing {
     min-height: 900px;
   }
 }
-
 @media (min-width: 1024px) {
   #landing {
     min-height: 768px;
   }
-}
-/*# sourceMappingURL=critical.css.map */
+}/*# sourceMappingURL=critical.css.map */

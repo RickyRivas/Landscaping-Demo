@@ -381,6 +381,7 @@
                 color: black;
                 width: max-content;
                 margin: 0;
+
                 &:hover {
                     opacity: .8;
                 }
@@ -425,6 +426,7 @@
 
                 p {
                     line-height: 1.5;
+                    margin-bottom: 1em;
                 }
             }
 
@@ -1233,6 +1235,7 @@
 
     #why {
         // position: relative;
+        padding-bottom: 8em;
 
         .container {
             .heading {
@@ -1246,7 +1249,7 @@
             .cards {
                 grid-template-columns: repeat(3, 1fr);
                 position: absolute;
-                bottom: 1em;
+                bottom: -4em;
                 z-index: 2;
                 max-width: 900px;
 
