@@ -1507,12 +1507,11 @@ body {
     background-attachment: fixed;
   }
   #why {
-    padding-bottom: 8em;
+    position: relative;
   }
   #why .container .cards {
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
-    bottom: -4em;
     z-index: 2;
     max-width: 900px;
   }

@@ -1234,8 +1234,8 @@
     }
 
     #why {
-        // position: relative;
-        padding-bottom: 8em;
+        position: relative;
+        // padding-bottom: 8em;
 
         .container {
             .heading {
@@ -1249,7 +1249,7 @@
             .cards {
                 grid-template-columns: repeat(3, 1fr);
                 position: absolute;
-                bottom: -4em;
+                // bottom: -4em;
                 z-index: 2;
                 max-width: 900px;
 
